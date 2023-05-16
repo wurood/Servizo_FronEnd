@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  SansitaSwashed-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F9F7F7;
+}
+
+code {
+  font-family:SansitaSwashed-Regular;
+}
+
+@font-face {
+  font-family: SansitaSwashed-Black;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-Black.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-Black;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-Black.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-Bold;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-Bold.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-ExtraBold;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-Light;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-Light.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-Medium;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-Medium.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-Regular;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-Regular.ttf);
+}
+
+@font-face {
+  font-family: SansitaSwashed-SemiBold;
+  src: url(./fonts/Sansita_Swashed/static/SansitaSwashed-SemiBold.ttf);
+}
