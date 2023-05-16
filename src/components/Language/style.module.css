@@ -1,0 +1,13 @@
+.text {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    display: flex;
+    bottom: 0 !important;
+    position: absolute;
+    margin-bottom: 15px;
+    margin-left: 37px;
+}
