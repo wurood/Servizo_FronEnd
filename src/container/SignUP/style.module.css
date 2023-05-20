@@ -102,4 +102,8 @@
     .form{
         padding: 20px !important;
     }
+
+    .thirdForm{
+        width: 45%;
+    }
 }
