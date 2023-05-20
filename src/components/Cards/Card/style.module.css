@@ -1,0 +1,128 @@
+.card {
+    width: 30%;
+    /* height: 521px; */
+    position: relative;
+    margin-bottom: 33px !important;
+    background-color: #FFFFFF;
+    box-shadow: 0 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+    border-radius: 26.6166px;
+
+}
+
+.image {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.text {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: -0.642075px;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
+    top: 35px;
+    text-align: center;
+}
+
+.horizontal_hr {
+    position: relative;
+    top: 35px;
+}
+
+.vertical_hr {
+    position: absolute;
+    top: 400px;
+    width: 17%;
+    rotate: 90deg;
+    left: 40%;
+}
+
+.interaction {
+    display: flex;
+    position: relative;
+    top: 30px;
+    justify-content: center;
+    gap: 50%;
+    align-items: flex-end !important;
+ 
+}
+
+.interaction span {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.0993px;
+    line-height: 24px;
+    letter-spacing: -0.454803px;
+    color: #000000;
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 40%;
+    /* background-color: aqua; */
+}
+
+@media only screen and (max-width: 1024px) {
+    .text {
+        font-size: 16px !important;
+    }
+
+    .horizontal_hr {
+        top:10px;
+    }
+
+    .vertical_hr {
+        top: 305px;
+        width: 22%;
+    }
+    .interaction {
+        top:0px;
+    }
+    .interaction span{
+        font-size: 12px;
+    }    
+}
+
+@media only screen and (min-width: 2560px) {
+    .text {
+        top:60px;
+        font-size: 54px !important;
+    }
+
+    .horizontal_hr {
+        top:100px;
+    }
+
+    .vertical_hr {
+        top: 670px;
+        width: 18%;
+    }
+    .interaction {
+        top:100px;
+    }
+    .interaction span{
+        font-size: 42px;
+    }    
+}
+
+@media only screen and (max-width: 780px) {
+    .text {
+        top:20px;
+    }
+    .vertical_hr {
+        position: absolute;
+        top: 255px;
+        width: 18%;
+    
+    }
+
+}
+
