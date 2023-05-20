@@ -1,0 +1,105 @@
+.row {
+    /* overflow: hidden; */
+}
+.logo {
+    left: 23px;
+}
+
+.Tittle {
+    text-align: center;
+    top: 40px;
+}
+
+.SubTittle {
+    text-align: left;
+    top: 120px;
+    left: 25%;
+}
+.ThirdFormSubTittle {
+    text-align: left;
+    top: 100px;
+    left: 7%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    gap: 20px;
+    align-items: center;
+    height: auto;
+}
+ .secondForm{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 130px;
+    gap: 20px;
+    align-items: center;
+    height: auto;
+ }
+ .thirdForm{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    gap: 20px;
+    align-items: center;
+    height: 250px;
+    flex-wrap: wrap;
+    width: 50%;
+    left:5%;
+ }
+
+.button_wrapper {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.submit_button {
+    display: flex !important;
+    justify-content: center !important;
+    position: relative;
+    top: 120px !important;
+}
+
+.checkAccount{
+    top:140px !important;
+}
+
+.description {
+    height: 100px !important;
+}
+
+.imgWrapper{
+    border:4px dotted #8C30C5;
+    border-radius: 10px;
+    height: 85px;
+}
+
+.browse {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top:20px;
+}
+
+.browse span {
+    color:#8C30C5;
+    cursor: pointer;
+
+}
+@media only screen and (max-width: 425px) {
+    .sideImage {
+        display: none;
+    }
+
+    .form{
+        padding: 20px !important;
+    }
+}
