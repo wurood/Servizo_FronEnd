@@ -1,7 +1,7 @@
 
 import React, { useState ,useEffect } from 'react'
 import style from './style.module.css'
-import { MDBRow, MDBCol,MDBInput ,MDBBtn } from 'mdb-react-ui-kit';
+import { MDBRow, MDBCol,MDBInput  } from 'mdb-react-ui-kit';
 import {SideImage} from '../../components/SideImage'
 import {Logo} from '../../components/Logo'
 import{Tittle} from '../../components/Tittle'
