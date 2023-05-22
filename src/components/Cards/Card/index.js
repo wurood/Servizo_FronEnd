@@ -5,12 +5,12 @@ import { FcLikePlaceholder} from "react-icons/fc";
 import { AiFillLike} from "react-icons/ai";
 
 
-export const Card = () => {
+export const Card = ({tittle}) => {
   return (
     <div className={style.card}>
         <img src={shopImage} alt='shop image' className={style.image} />
         <div className={style.card_content}>
-          <p className={style.text}>Fairies Shop</p>
+          <p className={style.text}>{tittle}</p>
           <div className={style.like_section}>
             <span><FcLikePlaceholder /> 50</span>
           </div>
