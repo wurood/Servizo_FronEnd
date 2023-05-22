@@ -1,0 +1,64 @@
+.comment {
+    position: relative;
+    width: 100%;
+    height: 716px;
+    left: 0;
+    top: 303px;
+    background-color: #f5e8e1;
+    display: flex;
+}
+
+.apostrophic {
+    position: absolute;
+    left: 10%;
+    right: 0.44%;
+    top: 98px;
+    bottom: 0;
+}
+
+.comment_description {
+    position: absolute;
+    font-family: SansitaSwashed-Regular;
+    left: 12%;
+    top: 130px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+}
+.image_section {
+    position: absolute;
+    display: flex;
+    gap:10%;
+    top: 372px;
+    left: 13%;
+    width: 20%;
+}
+.image_section  .person_image {
+    width: 61px;
+    height: 61px;
+}
+
+.image_section span {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #F4511E;
+}
+.image {
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 638px;
+    left: 802px;
+    top: 6px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+
+}
