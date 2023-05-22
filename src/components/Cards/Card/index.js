@@ -10,15 +10,13 @@ export const Card = () => {
     <div className={style.card}>
         <img src={shopImage} alt='shop image' className={style.image} />
         <div className={style.card_content}>
-           
-        <p className={style.text}>Fairies Shop</p>
-        {/* <hr className={style.horizontal_hr}/>
-        <hr className={style.vertical_hr}/>
-
-        <div className={style.interaction}>
+          <p className={style.text}>Fairies Shop</p>
+          <div className={style.like_section}>
             <span><FcLikePlaceholder /> 50</span>
+          </div>
+          <div className={style.interaction_section}>
             <span><AiFillLike /> 50</span>
-        </div> */}
+          </div>
         </div>
     </div>
   )

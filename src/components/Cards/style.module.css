@@ -1,10 +1,9 @@
 .cards_wrapper {
     width: 100%;
     padding: 0 5%;
-    height: 1538px;
+    height: 1300px;
     display: flex;
     flex-direction: column;
-
 }
 
 .cards_wrapper .first_section{
@@ -27,7 +26,7 @@
 .border {
     border-bottom: 2px solid #AAAAAA;
     border-width: 5px;
-    width: 6%;
+    width: 30%;
     display: block;
 }
 
@@ -42,10 +41,41 @@
 
 .cards{
     position: relative;
-    top:33px;
+    top: 80px;
     display: flex;
     flex-wrap: wrap;
     gap:3%;
     row-gap: 3%;;
     align-content: stretch
+}
+
+@media only screen and (max-width: 1024px) {
+    .cards_wrapper {
+        height: 1100px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .cards_wrapper {
+        height: 1900px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .cards_wrapper {
+        height: 950px;
+    }
+    .tittle {
+        font-size: 26px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .cards_wrapper {
+        height: 800px;
+    }
+    .tittle {
+        font-size: 20px;
+    }
 }
