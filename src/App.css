@@ -38,3 +38,7 @@
 .form-check{
   background-color: #e6e6fe !important;
 }
+
+.message{
+  height: 100px !important;
+}
