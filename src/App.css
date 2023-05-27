@@ -77,6 +77,10 @@
   justify-content: flex-end;
 }
 
+.p-4 {
+  height: 338px;
+}
+
 @media only screen and (max-width: 991px) {
   .navbar-light .navbar-nav .nav-link.active {
       width: 5%;
@@ -93,7 +97,6 @@
   .navbar {
     padding: 20px;
   }
-
 
 }
 
