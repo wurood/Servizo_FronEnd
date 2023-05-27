@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './style.module.css'
-import { Tittle } from '../Tittle'
 
 export const AboutUs = () => {
   return (
