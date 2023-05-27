@@ -23,7 +23,7 @@ function Header() {
   return (
     <MDBNavbar expand="lg" light bgColor="light">
         <MDBNavbarBrand href="#">
-           <LayoutLogo class='logo'/>
+           <LayoutLogo class='logo_'/>
         </MDBNavbarBrand>
         <MDBNavbarToggler
           type="button"

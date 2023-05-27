@@ -20,7 +20,7 @@ import { AiOutlineGooglePlus} from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-left'>
+    <MDBFooter bgColor='light' className='text-center text-lg-left footer'>
       <MDBContainer className='p-4'>
         <MDBRow className='row-height'>
           <MDBCol lg='6' md='12' className='mb-4 mb-md-0'>
