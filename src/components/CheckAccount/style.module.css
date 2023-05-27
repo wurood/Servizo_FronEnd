@@ -1,0 +1,23 @@
+.text {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    top:250px;
+}
+
+.span {
+    color: #C0B4FD;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .text {
+        top: 120px !important;
+    }
+}
