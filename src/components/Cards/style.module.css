@@ -1,0 +1,81 @@
+.cards_wrapper {
+    width: 100%;
+    padding: 0 5%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards_wrapper .first_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    width: inherit;
+}
+.tittle {
+    font-family: 'Sansita Swashed';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 64px;
+    text-transform: capitalize;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+}
+
+.border {
+    border-bottom: 2px solid #AAAAAA;
+    border-width: 5px;
+    width: 30%;
+    display: block;
+}
+
+.button {
+    width: 20% !important;
+    height: 65px !important;
+    background-color: #AC93B5 !important;
+    box-shadow: 0 20px 13px rgba(248, 90, 71, 0.035), 0 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519) !important;
+    border-radius: 5px !important;
+    top:9px !important;
+}
+
+.cards{
+    position: relative;
+    top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:3%;
+    row-gap: 3%;;
+    align-content: stretch
+}
+
+@media only screen and (max-width: 1024px) {
+    .cards_wrapper {
+        height: 1100px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .cards_wrapper {
+        height: 1900px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .cards_wrapper {
+        height: 950px;
+    }
+    .tittle {
+        font-size: 26px;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .cards_wrapper {
+        height: 800px;
+    }
+    .tittle {
+        font-size: 20px;
+    }
+}
