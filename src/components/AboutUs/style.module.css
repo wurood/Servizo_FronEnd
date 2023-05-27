@@ -5,7 +5,7 @@
 }
 .separator {
     border-bottom: 3px solid #C4C4C4 !important;
-    position: absolute !important;
+    position: relative !important;
     width: 50% !important;
     left: 25%;
     top: 50px !important;
@@ -46,4 +46,23 @@
     position: relative;
     top:200px;
     text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .description{
+        font-size: 26px; 
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .description{
+        font-size: 18px; 
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .description{
+        font-size: 16px; 
+    }
 }
