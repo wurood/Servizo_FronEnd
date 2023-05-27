@@ -12,10 +12,10 @@ export const Card = ({tittle}) => {
         <div className={style.card_content}>
           <p className={style.text}>{tittle}</p>
           <div className={style.like_section}>
-            <span><FcLikePlaceholder /> 50</span>
+            <span className={style.icon}><FcLikePlaceholder /> 50</span>
           </div>
           <div className={style.interaction_section}>
-            <span><AiFillLike /> 50</span>
+            <span className={style.icon}><AiFillLike /> 50</span>
           </div>
         </div>
     </div>
