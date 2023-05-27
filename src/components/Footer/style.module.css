@@ -10,7 +10,7 @@
     background-color: white !important;
     height: 338px !important;
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 85%;
     left: 8%;

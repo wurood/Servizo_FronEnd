@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './style.module.css'
-import shopImage from '../../../assets/shop_image.png'
+import shopImage from '../../assets/shop_image.png'
 import { FcLikePlaceholder} from "react-icons/fc";
 import { AiFillLike} from "react-icons/ai";
 

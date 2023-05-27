@@ -1,8 +1,8 @@
 import React ,{useState,useMemo} from 'react'
 import style from './style.module.css'
 import {Button} from '../../components/Button'
-import {Card} from './Card/index'
-import { Pagination } from './Pagination'
+import {Card} from '../Card/index'
+import { Pagination } from '../Pagination'
 import {data} from './moc-data';
 
 let PageSize = 6;
