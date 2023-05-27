@@ -59,6 +59,54 @@
 
 .Map{
     position: relative;
-    top:140px;
+    top:20px;
     width: 80%;;
+}
+
+
+.text {
+    position: relative;
+    top: 140px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text p {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.social-media {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    top: 20px
+}
+
+
+@media only screen and (max-width: 2560px) {
+    .Map{
+        width: 60%;
+    }
+
+}
+
+
+@media only screen and (max-width: 425px) {
+    .wrapper{
+        height: 1000px;
+    }
+
+    .colHeight{
+        height: auto !important;
+    }
+
+    .text {
+        top: 2px;
+        text-align: center;
+        align-items: center;
+    }
 }
