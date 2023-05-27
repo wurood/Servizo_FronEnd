@@ -1,14 +1,7 @@
 import logo from './logo.svg'
 import './App.css'
-import { Route, Routes} from 'react-router-dom';
-
-import Layout from './components/Layout';
-import { Landing } from './container/Landing';
-import { Shopes } from './container/Shopes';
-import { Request } from './container/Request';
-import { Login } from './container/Login';
-import { SignUP } from './container/SignUP';
-
+import { MDBContainer } from 'mdb-react-ui-kit';
+import Footer from './components/Footer'
 function App() {
   return (
       <Layout>
