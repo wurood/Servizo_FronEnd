@@ -7,8 +7,11 @@
     background-color: #f5e8e1;
     display: flex;
 }
-
-.apostrophic {
+.text{
+    width: 50%;
+    height: auto;
+}
+.text .apostrophic {
     position: absolute;
     left: 10%;
     right: 0.44%;
@@ -16,7 +19,7 @@
     bottom: 0;
 }
 
-.comment_description {
+.text .comment_description {
     position: absolute;
     font-family: SansitaSwashed-Regular;
     left: 12%;
@@ -54,11 +57,18 @@
 
     box-sizing: border-box;
     position: absolute;
-    width: 638px;
-    left: 802px;
+    width: 45%;
+    right: 0;
     top: 6px;
     background: #FFFFFF;
     border: 1px solid #DEDEDE;
     border-radius: 5px;
 
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .comment {
+        height: 600px;
+    }
 }
