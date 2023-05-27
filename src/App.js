@@ -3,11 +3,11 @@ import './App.css'
 import { MDBContainer } from 'mdb-react-ui-kit';
 import {Logo} from './components/Logo'
 import { SignUP } from './container/SignUP';
-import {AboutUs}from './components/AboutUs'
+import {RequestForm}from './components/RequestForm'
 function App() {
   return (
     <MDBContainer fluid>
-      <AboutUs />
+      <RequestForm />
     </MDBContainer>
   );
 }
