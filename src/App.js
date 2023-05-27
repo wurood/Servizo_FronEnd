@@ -1,10 +1,15 @@
 import logo from './logo.svg'
 import './App.css'
-import { MDBContainer } from 'mdb-react-ui-kit';
-import Footer from './components/Footer'
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout'
+import {Landing} from './container/Landing'
+import {Request} from './container/Request'
+import {Shopes} from './container/Shopes'
+import {Login} from './container/Login'
+import {SignUP} from './container/SignUP'
+
 function App() {
   return (
-      <Layout>
       <Routes>
            <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUP />} />
@@ -15,7 +20,6 @@ function App() {
             </Route>
             <Route path="*" element={<>404 page not found</>} />
         </Routes>
-    </Layout>
   );
 }
 
