@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import './style.css'
 import {LayoutLogo} from "../LayoutLogo";
 import { FcSearch } from "react-icons/fc";
 import { FcLikePlaceholder} from "react-icons/fc";
+import style from './style.module.css'
 
 import {
   MDBContainer,
@@ -34,7 +34,7 @@ function Header() {
           <MDBIcon icon="bars" fas />
         </MDBNavbarToggler>
         <MDBCollapse navbar show={showNav}>
-          <MDBNavbarNav className="navbarItem">
+          <MDBNavbarNav className={style.navbarItem}>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current="page" href="#">
                 Home
@@ -48,7 +48,7 @@ function Header() {
             </MDBNavbarItem>
 
           </MDBNavbarNav>
-          <MDBNavbarNav className="navbarItem">   
+          <MDBNavbarNav className={style.navbarItem}>   
             <MDBNavbarItem>
               <MDBNavbarLink href="#" tabIndex={-1} aria-disabled="true">
                 <FcSearch /> Search
