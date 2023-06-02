@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './style.module.css'
-import Image from '../../assets/rectangle_ll.png'
+import Image from '../../assets/Side_Image.png'
 
 export const SideImage = () => {
   return (

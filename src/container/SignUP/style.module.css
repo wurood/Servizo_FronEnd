@@ -1,5 +1,5 @@
 .row {
-    /* overflow: hidden; */
+   height: 100vh;
 }
 .logo {
     left: 23px;
