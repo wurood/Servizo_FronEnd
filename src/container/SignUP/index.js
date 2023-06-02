@@ -13,7 +13,7 @@ export const SignUP = () => {
     const [toNext, setNext] = useState(1);
     const [isShop, setIsShop] = useState(false);
     const type = "user";
-  
+
     const [formData, setFormData] = useState({
         username:'',
         email: '',
@@ -33,23 +33,7 @@ export const SignUP = () => {
         description: '',
         img:''
       });
-
-      const FirstFormeData = [
-        { value:formData.username, data: 'username' },
-        { value: formData.email, data: 'email' },
-        { value: formData.password, data: 'password' },
-        { value: formData.address, data: 'address' },
-        { value: formData.phone_number, data: 'phone_number' }
-      ];
-
-      const ShopFormeData = [
-        { value: shopData.name, data: 'name' },
-        { value: shopData.city, data: 'city' },
-        { value: shopData.facebook_link, data: 'facebook_link' },
-        { value: shopData.instagram_link, data: 'instagram_link' },
-        { value: shopData.description, data: 'description' }
-      ];
-
+    
       const onChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
       };
@@ -84,24 +68,64 @@ export const SignUP = () => {
           <Tittle Tittle="Welcome !"  class={style.Tittle}/>
 
           <MDBRow tag="form" className={ ` ${style.form}`} onSubmit={(e) =>handelNext(e)}>
-              {FirstFormeData.map((item) =>(
-                <MDBCol md="6">
-                <MDBInput
-                    value={item.value}
-                    name={item.data}
-                    onChange={onChange}
-                    id={item.data}
-                    required
-                    label={item.data}
-                  />
-                </MDBCol>
-              ))}
- 
+            <MDBCol md="6">
+            <MDBInput
+                value={formData.username}
+                name='username'
+                onChange={onChange}
+                id='username'
+                required
+                label='username'
+              />
+            </MDBCol>
+            <MDBCol md="6">
+            <MDBInput
+                value={formData.email}
+                name='email'
+                onChange={onChange}
+                id='email'
+                required
+                label='email'
+              />
+            </MDBCol>
+            <MDBCol md="6">
+              <MDBInput
+                value={formData.password}
+                type='password'
+                name='password'
+                onChange={onChange}
+                id='password'
+                required
+                label='password'
+              />
+            </MDBCol>
+            <MDBCol md="6">
+              <MDBInput
+                value={formData.address}
+                type='address'
+                name='address'
+                onChange={onChange}
+                id='address'
+                required
+                label='address'
+              />
+            </MDBCol>
+            <MDBCol md="6">
+              <MDBInput
+                value={formData.phone_number}
+                type='phone_number'
+                name='phone_number'
+                onChange={onChange}
+                id='phone_number'
+                required
+                label='phone number'
+              />
+            </MDBCol>
             <MDBCol size="4" className={style.button_wrapper}>
                  <Button text="Next" />
             </MDBCol>
           </MDBRow>
-          <CheckAccount text="Do you have an Account!" navigate="Login"  class={style.checkAccount}/>
+          <CheckAccount text="Don’t have Account !" navigate="Login"  class={style.checkAccount}/>
           <Language/> 
 
         </MDBCol>}
@@ -121,7 +145,7 @@ export const SignUP = () => {
                  <Button text="Next" />
             </MDBCol>
           </MDBRow>
-          <CheckAccount text="Do you have an Account!" navigate="Login"  class={style.checkAccount}/>
+          <CheckAccount text="Don’t have Account !" navigate="Login"  class={style.checkAccount}/>
           <Language/> 
 
         </MDBCol>} 
@@ -133,19 +157,57 @@ export const SignUP = () => {
          <SubTittle Tittle="Shope Info :"  class={style.ThirdFormSubTittle}/>
 
          <MDBRow tag="form" className={ ` ${style.thirdForm}`} onSubmit={(e) =>handelSubmit(e)}>
-            {ShopFormeData.map((item) =>(
-                <MDBCol md="10">
-                <MDBInput
-                    value={item.value}
-                    name={item.data}
-                    onChange={onChange}
-                    id={item.data}
-                    required
-                    label={item.data}
-                  />
-                </MDBCol>
-              ))}
-
+         <MDBCol md="10">
+            <MDBInput
+                value={shopData.name}
+                name='name'
+                onChange={onChangeShop}
+                id='name'
+                required
+                label='name'
+              />
+            </MDBCol>
+            <MDBCol md="10">
+            <MDBInput
+                value={shopData.city}
+                name='city'
+                onChange={onChangeShop}
+                id='city'
+                required
+                label='city'
+              />
+            </MDBCol>
+            <MDBCol md="10">
+            <MDBInput
+                value={shopData.facebook_link}
+                name='facebook_link'
+                onChange={onChangeShop}
+                id='facebook_link'
+                required
+                label='facebook_link'
+              />
+            </MDBCol>
+            <MDBCol md="10">
+            <MDBInput
+                value={shopData.instagram_link}
+                name='instagram_link'
+                onChange={onChangeShop}
+                id='instagram_link'
+                required
+                label='instagram_link'
+              />
+            </MDBCol>
+            <MDBCol md="10">
+            <MDBInput
+                value={shopData.description}
+                name='description'
+                onChange={onChangeShop}
+                id='description'
+                required
+                label='description'
+                className={style.description}
+              />
+            </MDBCol>
             <MDBCol md="10">
             <div className={style.imgWrapper}>
                 <p className={style.browse}>Drag shop image here, or <span>browse</span></p>
@@ -155,7 +217,7 @@ export const SignUP = () => {
          <MDBCol size="12" className={style.submit_button}>
                 <Button text="Submit" />
            </MDBCol>
-         <CheckAccount text="Do you have an Account !" navigate="Login"  class={style.checkAccount}/>
+         <CheckAccount text="Don’t have Account !" navigate="Login"  class={style.checkAccount}/>
          <Language/> 
 
        </MDBCol>

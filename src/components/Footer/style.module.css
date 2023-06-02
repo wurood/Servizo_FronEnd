@@ -6,15 +6,11 @@
     top: 69px !important;
 }
 
-.p-4 {
-    height: 338px;
-}
-
-.bg-light {
+.footer {
     background-color: white !important;
     height: 338px !important;
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 85%;
     left: 8%;
@@ -34,7 +30,7 @@
     font-size: 14px;
 }
 
-.social-media {
+.social_media {
     display: flex;
     gap: 40px;
     position: relative;
@@ -66,10 +62,10 @@
 
 @media only screen and (max-width: 991px) {
     .text {
-        position: absolute;
-        top:100px;
+        position: relative;
+        align-items: center;
     }
-    .row-height{
+    .row_height{
         height: auto !important;
     }
 
@@ -82,4 +78,26 @@
     .logo {
          top: 10px !important; 
     }
+}
+
+@media only screen and (max-width: 425px) {
+    .text {
+      top:20px;
+      font-size:12px !important
+    }
+    .copyright {
+        font-size:11px !important
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .text {
+      top:20px;
+      font-size:12px !important
+    }
+    .copyright {
+        font-size:9px !important
+    }
+
 }

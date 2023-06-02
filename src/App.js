@@ -9,6 +9,7 @@ function App() {
     <MDBContainer fluid>
       <ShopesList />
     </MDBContainer>
+
   );
 }
 
