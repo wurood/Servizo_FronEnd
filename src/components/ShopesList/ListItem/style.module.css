@@ -1,0 +1,72 @@
+.item {
+    position: relative;
+    width: 90%;
+    height: 203px;
+    background: #FFFFFF;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 18px;
+    display: flex;
+}
+
+.image {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    top: 20px
+}
+
+.company {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4C4C;
+}
+
+.description {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #486AAE;
+    word-wrap: break-word;
+    width: 65%;
+}
+
+.place {
+    font-family: SansitaSwashed-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4C4C;
+    position: absolute;
+    bottom: 30px;
+}
+
+.button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20%;
+    height: 36px;
+    right: 4%;
+    top:20px;
+    border: 1px solid #965EDC;
+    border-radius: 5px;
+}
+
+.stars{
+    display: flex;
+    gap:1%;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
