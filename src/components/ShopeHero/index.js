@@ -9,7 +9,6 @@ export const ShopeHero = () => {
         <span className={style.border}></span>
       </p>
       <div className={style.cards_wrapper}>
-
       </div>
     </div>
   )
