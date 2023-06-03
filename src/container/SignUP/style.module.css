@@ -1,5 +1,5 @@
 .row {
-   height: 100vh;
+    height:100vh;
 }
 .logo {
     left: 23px;
@@ -101,9 +101,5 @@
 
     .form{
         padding: 20px !important;
-    }
-
-    .thirdForm{
-        width: 45%;
     }
 }

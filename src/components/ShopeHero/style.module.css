@@ -1,5 +1,5 @@
 .hero {
-    position: absolute;
+    position: relative;
     width: 90%;
     height: 733px;
     margin: 0 5%;
@@ -29,6 +29,9 @@
 
 .cards_wrapper{
     width: inherit;
-    height: inherit;
     margin: 5%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,21 +1,27 @@
 .wrapper{
     height: 300vh !important;
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
     .wrapper {
-        height: 430vh !important;
+        height: 650vh !important;
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .wrapper {
-        height: 500vh !important; 
+        height: 700vh !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        height: 700vh !important;
     }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
     .wrapper {
-        height: 590vh !important;
+        height: 620vh !important;
     }
 }
 
