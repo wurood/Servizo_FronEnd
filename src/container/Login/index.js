@@ -1,5 +1,6 @@
 
 import React, { useState ,useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
 import style from './style.module.css'
 import { MDBRow, MDBCol,MDBInput  } from 'mdb-react-ui-kit';
 import {SideImage} from '../../components/SideImage'
@@ -9,8 +10,12 @@ import {SubTittle} from '../../components/SubTittle'
 import {Language} from '../../components/Language'
 import {CheckAccount} from '../../components/CheckAccount'
 import {Button} from '../../components/Button'
+import axios from 'axios';
 
 export const Login = () => {
+
+  const navigate = useNavigate();
+  const [data, setData] = useState([]);
 
   const [formData, setFormData] = useState({
     email: '',
@@ -21,9 +26,27 @@ export const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const fetchData = async () => {
+    try {
+      const response = await axios.post('http://localhost:8000/api/auth/login',
+      {
+          email: formData.email,
+          password: formData.password,
+      }
+      );
+      setData(response.data);
+      console.log(response.data.user)
+      const userJson = JSON.stringify(response.data.user);
+      localStorage.setItem("user",userJson);
+      navigate('/shopes');
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
   const handelSubmit = (e) =>{
     e.preventDefault();
-
+    fetchData();
   }
 
   return (
