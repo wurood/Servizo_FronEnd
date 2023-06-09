@@ -3,7 +3,7 @@ import style from './style.module.css'
 
 export const AboutUs = () => {
   return (
-    <div className={style.aboutUs}>
+    <div className={style.aboutUs} id="about-section">
       <hr className={style.separator}></hr>
       <p className={style.tittle}>About <span>US</span></p>
       <p className={style.description}>

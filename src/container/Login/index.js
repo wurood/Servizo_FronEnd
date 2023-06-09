@@ -2,6 +2,7 @@
 import React, { useState ,useEffect } from 'react'
 import { useNavigate } from "react-router-dom";
 import style from './style.module.css'
+import toast, { Toaster } from 'react-hot-toast';
 import { MDBRow, MDBCol,MDBInput  } from 'mdb-react-ui-kit';
 import {SideImage} from '../../components/SideImage'
 import {Logo} from '../../components/Logo'
@@ -16,6 +17,7 @@ export const Login = () => {
 
   const navigate = useNavigate();
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     email: '',
@@ -28,19 +30,42 @@ export const Login = () => {
 
   const fetchData = async () => {
     try {
+      toast.success('Look at my styles.', {
+        style: {
+          border: '1px solid #713200',
+          padding: '16px',
+          color: '#713200',
+        },
+        iconTheme: {
+          primary: '#713200',
+          secondary: '#FFFAEE',
+        },
+      });
+
+      setIsLoading(true);
+
       const response = await axios.post('http://localhost:8000/api/auth/login',
       {
           email: formData.email,
           password: formData.password,
       }
       );
-      setData(response.data);
-      console.log(response.data.user)
-      const userJson = JSON.stringify(response.data.user);
-      localStorage.setItem("user",userJson);
-      navigate('/shopes');
+      if(response.data.status === 'success'){
+        setData(response.data);
+        console.log(response.data.user)
+        const userJson = JSON.stringify(response.data.user);
+        localStorage.setItem("user",userJson);
+        setIsLoading(false);
+        navigate('/shopes');
+      }else{
+        toast('Here is your toast.')
+      }
+ 
     } catch (error) {
       console.error('Error fetching data:', error);
+
+      setIsLoading(false);
+
     }
   };
 
@@ -50,6 +75,8 @@ export const Login = () => {
   }
 
   return (
+    <>
+  
     <MDBRow className={style.row}>
       <MDBCol lg='6' md='6' sm='6'  className={style.sideImage} >
         <SideImage />
@@ -83,7 +110,12 @@ export const Login = () => {
             </MDBCol>
   
             <MDBCol size="4" className={style.button_wrapper}>
+            {isLoading ? 
+              <span class="loader"></span>
+              :
               <Button text="Login" />
+            }
+
             </MDBCol>
           </MDBRow>
           <CheckAccount text="Don’t have Account !" navigate=" Register" />
@@ -91,5 +123,7 @@ export const Login = () => {
 
       </MDBCol>
     </MDBRow>
+  
+    </>
   )
 }

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import {LayoutLogo} from "../LayoutLogo";
 import { FcSearch } from "react-icons/fc";
 import { FcLikePlaceholder} from "react-icons/fc";
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 import style from './style.module.css'
 
 import {
@@ -19,7 +21,9 @@ import {
 
 function Header() {
   const [showNav, setShowNav] = useState(false);
-
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <MDBNavbar expand="lg" light bgColor="light">
         <MDBNavbarBrand href="#">
@@ -37,14 +41,29 @@ function Header() {
           <MDBNavbarNav className={style.navbarItem}>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current="page" href="#">
+                <Link
+                to="home-section"
+                smooth={true}
+                duration={500}
+                onClick={scrollToTop}
+              >
                 Home
+              </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">Shopes</MDBNavbarLink>
+              <MDBNavbarLink>
+              <Link to="Shopes-section" smooth={true} duration={200}>
+              Shopes
+              </Link>
+                </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">About Us</MDBNavbarLink>
+              <MDBNavbarLink > 
+              <Link to="about-section" smooth={true} duration={200}>
+                About
+              </Link>
+              </MDBNavbarLink>
             </MDBNavbarItem>
 
           </MDBNavbarNav>

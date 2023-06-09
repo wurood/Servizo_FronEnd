@@ -18,7 +18,7 @@ export const Cards = () => {
   }, [currentPage]);
 
   return (
-    <div className={style.cards_wrapper}>
+    <div className={style.cards_wrapper} id="Shopes-section">
         <div className={style.first_section}>
         <p className={style.tittle}>
         list  of  Shopes

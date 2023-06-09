@@ -60,7 +60,8 @@
     display: flex !important;
     justify-content: center !important;
     position: relative;
-    top: 120px !important;
+    top: 80px !important;
+    right: 50%;
 }
 
 .checkAccount{
